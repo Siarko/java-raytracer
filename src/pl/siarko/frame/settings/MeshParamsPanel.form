@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pl.siarko.frame.settings.MeshParamsPanel">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-12960449"/>
+      <foreground color="-4605511"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="dac5c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12960449"/>
+          <foreground color="-4605511"/>
+          <text value="Model"/>
+        </properties>
+      </component>
+      <component id="98482" class="javax.swing.JButton" binding="selectModelButton">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12960449"/>
+          <foreground color="-4605511"/>
+          <text value="Wybierz"/>
+        </properties>
+      </component>
+      <component id="2581c" class="javax.swing.JLabel" binding="modelName">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12960449"/>
+          <foreground color="-4605511"/>
+          <text value="Nie wybrano"/>
+        </properties>
+      </component>
+      <grid id="35584" binding="activeMeshParams" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12960449"/>
+          <foreground color="-4605511"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="3594b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12960449"/>
+              <foreground color="-4605511"/>
+              <text value="X"/>
+            </properties>
+          </component>
+          <component id="aba81" class="pl.siarko.frame.components.JNumberField" binding="xpos">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12368056"/>
+              <foreground color="-4605511"/>
+            </properties>
+          </component>
+          <component id="5f26c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12960449"/>
+              <foreground color="-4605511"/>
+              <text value="Y"/>
+            </properties>
+          </component>
+          <component id="fcafe" class="pl.siarko.frame.components.JNumberField" binding="ypos">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12368056"/>
+              <foreground color="-4605511"/>
+            </properties>
+          </component>
+          <component id="3da98" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12960449"/>
+              <foreground color="-4605511"/>
+              <text value="Z"/>
+            </properties>
+          </component>
+          <component id="51b58" class="pl.siarko.frame.components.JNumberField" binding="zpos">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12368056"/>
+              <foreground color="-4605511"/>
+            </properties>
+          </component>
+          <component id="2e0cd" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12960449"/>
+              <foreground color="-4605511"/>
+              <text value="Skala"/>
+            </properties>
+          </component>
+          <component id="10da2" class="pl.siarko.frame.components.JNumberField" binding="scale">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12368056"/>
+              <foreground color="-4605511"/>
+            </properties>
+          </component>
+          <component id="7dc52" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12960449"/>
+              <foreground color="-4605511"/>
+              <text value="RX"/>
+            </properties>
+          </component>
+          <component id="cc58a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12960449"/>
+              <foreground color="-4605511"/>
+              <text value="RY"/>
+            </properties>
+          </component>
+          <component id="67e49" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12960449"/>
+              <foreground color="-4605511"/>
+              <text value="RZ"/>
+            </properties>
+          </component>
+          <component id="ec9a8" class="pl.siarko.frame.components.JNumberField" binding="rotX">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12368056"/>
+              <foreground color="-4605511"/>
+            </properties>
+          </component>
+          <component id="1ddf9" class="pl.siarko.frame.components.JNumberField" binding="rotY">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12368056"/>
+              <foreground color="-4605511"/>
+            </properties>
+          </component>
+          <component id="75b05" class="pl.siarko.frame.components.JNumberField" binding="rotZ">
+            <constraints>
+              <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12368056"/>
+              <foreground color="-4605511"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="f31fa">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

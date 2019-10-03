@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pl.siarko.frame.SettingsFrame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="882" height="464"/>
+    </constraints>
+    <properties>
+      <background color="-10919324"/>
+      <enabled value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="ae0e0" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12631484"/>
+          <doubleBuffered value="false"/>
+          <foreground color="-4605511"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="c98c4" binding="scenePanel" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Opcje sceny"/>
+            </constraints>
+            <properties>
+              <background color="-12894656"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <foreground color="-4605511"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="10a87" binding="sceneVisualizationPanelTop" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12697277"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="9d0ed" binding="objectSelectionPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="3" row-span="4" col-span="1" vsize-policy="3" hsize-policy="1" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                    <maximum-size width="400" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12303549"/>
+                  <doubleBuffered value="false"/>
+                  <foreground color="-4539718"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="79586" class="javax.swing.JTree" binding="objectSelectionTree" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="300" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-12697277"/>
+                      <foreground color="-4210753"/>
+                    </properties>
+                  </component>
+                  <component id="999be" class="javax.swing.JButton" binding="newObjectButton">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12631484"/>
+                      <foreground color="-4079167"/>
+                      <text value="Nowy obiekt"/>
+                    </properties>
+                  </component>
+                  <component id="9d5b1" class="javax.swing.JButton" binding="removeObjectButton">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12960449"/>
+                      <foreground color="-4605511"/>
+                      <text value="Usuń"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="e1fa9" binding="objectSettingsPanel" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12894656"/>
+                  <enabled value="true"/>
+                  <foreground color="-4539718"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5f6e3" class="javax.swing.JComboBox" binding="objectTypeSelect">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12368312"/>
+                      <enabled value="false"/>
+                      <foreground color="-4276546"/>
+                    </properties>
+                  </component>
+                  <grid id="eaa1d" binding="specificSettingsPannel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12763070"/>
+                      <doubleBuffered value="false"/>
+                      <foreground color="-11645362"/>
+                    </properties>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                  <component id="d2d7a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-13289414"/>
+                      <foreground color="-4802890"/>
+                      <text value="Rodzaj"/>
+                    </properties>
+                  </component>
+                  <component id="47b67" class="javax.swing.JComboBox" binding="objectMaterialSelect">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12631484"/>
+                      <enabled value="false"/>
+                      <foreground color="-4605511"/>
+                    </properties>
+                  </component>
+                  <component id="9a9e7" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12631484"/>
+                      <foreground color="-4539718"/>
+                      <text value="Materiał"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="3bd1c" binding="materialPanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="2" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="ef5c1" class="javax.swing.JButton" binding="newMaterialButton">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12960449"/>
+                      <foreground color="-4605511"/>
+                      <text value="Nowy materiał"/>
+                    </properties>
+                  </component>
+                  <component id="b32f7" class="javax.swing.JComboBox" binding="materialSettingsSelect">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="abc8" class="javax.swing.JButton" binding="changeMaterialProps">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Zmień właściwości materiału"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <grid id="53521" binding="materialVisualization" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="708a8" binding="sceneVisualizationPanelSide" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="2" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <hspacer id="29130">
+                <constraints>
+                  <grid row="0" column="0" row-span="4" col-span="1" vsize-policy="1" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="5" height="-1"/>
+                    <preferred-size width="5" height="-1"/>
+                    <maximum-size width="5" height="-1"/>
+                  </grid>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="28bc2" binding="generalPanel" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Ustawienia środowiska"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="false"/>
+              <background color="-13157828"/>
+              <foreground color="-4408132"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="31984" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13092035"/>
+                  <doubleBuffered value="false"/>
+                  <foreground color="-4802890"/>
+                  <text value="Kolor środowiska"/>
+                </properties>
+              </component>
+              <vspacer id="2b999">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="b72b" class="javax.swing.JButton" binding="selectEnvColorBtn">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <label value="Zmień"/>
+                  <text value="Zmień"/>
+                </properties>
+              </component>
+              <component id="43861" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <text value="Liczba odbić promienia"/>
+                </properties>
+              </component>
+              <component id="5e76e" class="pl.siarko.frame.components.JNumberField" binding="globRayBounceCount">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12368056"/>
+                  <caretColor color="-4605511"/>
+                  <disabledTextColor color="-6842473"/>
+                  <foreground color="-4605511"/>
+                </properties>
+                <clientProperties>
+                  <integerOnly class="java.lang.Boolean" value="true"/>
+                  <positiveOnly class="java.lang.Boolean" value="true"/>
+                </clientProperties>
+              </component>
+              <component id="76ed9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <text value="Liczba wątków"/>
+                </properties>
+              </component>
+              <component id="6d718" class="pl.siarko.frame.components.JNumberField" binding="workerCount">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12368056"/>
+                  <foreground color="-4605511"/>
+                </properties>
+              </component>
+              <hspacer id="bcb33">
+                <constraints>
+                  <grid row="0" column="0" row-span="8" col-span="1" vsize-policy="1" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="5" height="-1"/>
+                    <preferred-size width="5" height="-1"/>
+                    <maximum-size width="5" height="-1"/>
+                  </grid>
+                </constraints>
+              </hspacer>
+              <component id="392d8" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <text value="Szerokość grafiki"/>
+                </properties>
+              </component>
+              <component id="5e8f0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <text value="Wysokość grafiki"/>
+                </properties>
+              </component>
+              <component id="a2a07" class="pl.siarko.frame.components.JNumberField" binding="imageWidth">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12368056"/>
+                  <foreground color="-4605511"/>
+                </properties>
+                <clientProperties>
+                  <integerOnly class="java.lang.Boolean" value="true"/>
+                  <positiveOnly class="java.lang.Boolean" value="true"/>
+                </clientProperties>
+              </component>
+              <component id="a7c13" class="pl.siarko.frame.components.JNumberField" binding="imageHeight">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12368056"/>
+                  <foreground color="-4605511"/>
+                </properties>
+                <clientProperties>
+                  <integerOnly class="java.lang.Boolean" value="true"/>
+                  <positiveOnly class="java.lang.Boolean" value="true"/>
+                </clientProperties>
+              </component>
+              <component id="4399b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <text value="Zastosuj filtr medianowy na krawędziach"/>
+                </properties>
+              </component>
+              <component id="b5782" class="javax.swing.JCheckBox" binding="applyFilter">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="c96d2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12960449"/>
+                  <foreground color="-4605511"/>
+                  <text value="FOV"/>
+                </properties>
+              </component>
+              <component id="5ff24" class="pl.siarko.frame.components.JNumberField" binding="cameraFov">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12368056"/>
+                  <foreground color="-4605511"/>
+                </properties>
+                <clientProperties>
+                  <integerOnly class="java.lang.Boolean" value="true"/>
+                  <positiveOnly class="java.lang.Boolean" value="true"/>
+                </clientProperties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="17b7d" class="javax.swing.JButton" binding="generateButton">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12499898"/>
+          <foreground color="-3947581"/>
+          <text value="Renderuj"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

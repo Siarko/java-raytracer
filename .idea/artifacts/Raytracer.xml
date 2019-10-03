@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Raytracer">
+    <output-path>$PROJECT_DIR$/out/artifacts/Raytracer</output-path>
+    <root id="archive" name="Raytracer.jar">
+      <element id="dir-copy" path="$PROJECT_DIR$/out/production/Raytracer" />
+    </root>
+  </artifact>
+</component>
